@@ -632,10 +632,16 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		clear: both;
 	}
 
+	.box{
+		display: flex;
+	}
+
 	.about-box{
-		text-align: center;
-		margin:0px auto 0;
+		flex:1;
+		text-align:center;
+		margin:auto;
 		cursor: pointer;
+
 	}
 /* About Icon Styles */
 
@@ -677,6 +683,18 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		transition: all 0.3s;
 	}
 
+	/*Back ground for features*/
+.gymFeature{
+	/*background-image:url(../images/features/gym.png);*/
+	/*background-position: 100%;*/
+	/*background-repeat: no-repeat;*/
+}
+
+.ptFeature{
+	/*background-image:url(../images/features/pt.jpeg);*/
+	/*background-position: 100%;*/
+	/*background-repeat: no-repeat;*/
+}
 
 /* About Box Hover Styles */
 
