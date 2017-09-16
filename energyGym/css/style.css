@@ -222,6 +222,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		font-weight: 400;
 		text-align: center;
 		margin:0 auto;
+		color: red;
 	}
 
 	.h-desc{
@@ -288,12 +289,53 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		color:#333;
 	}
 
-	.colored{
-		color: #8BC3A3;
+	.red{
+		color: darkred;
+
 	}
 
+
+	.contact{
+		text-align: center;
+	}
+	.colored{
+		color: #d10a2c;
+	}
+
+	.footerContainer{
+		background-color: black;
+	}
+
+	.coloumn1{
+		margin-right: auto; margin-left: auto; width: 800px;
+		text-align: center;
+	}
+
+
+	#map{
+		float:left;
+		display: inline;
+	}
+
+	#address{
+		display: inline;
+	}
+
+	#footer{
+		height: 50px;
+		text-align: center;
+		background: #191919;
+		background:#222;
+	}
+	.logo{
+		float:left;
+	}
+
+	.logoContainer{
+		margin-right: auto; margin-left: auto; width: 800px;
+	}
 	.colored-bg{
-		background-color: #8BC3A3;
+		background-color: #d10a2c;
 	}
 
 	.gray-border{
@@ -301,15 +343,15 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	}
 
 	.colored-border{
-		border-color: #8BC3A3;
+		border-color: #d10a2c;
 	}
 
 	.colored-border-left{
-		border-left-color: #8BC3A3;
+		border-left-color: #d10a2c;
 	}
 
 	.colored-border-right{
-		border-right-color: #8BC3A3;
+		border-right-color: #d10a2c;
 	}
 
 	.white-bg{
@@ -336,7 +378,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 
 	.arrow-down {
 		margin-top: 50px;
-		color: #8BC3A3;
+		color: #d10a2c;
 		font-size: 55px !important;
 	}
 
@@ -411,21 +453,27 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		background-attachment: fixed;
 	}
 
+    #slides .slides-container .image0{
+	background-image:url(../images/energy.jpeg);
+   }
+
 	#slides .slides-container .image1{
-		background-image:url(../images/5.jpg);
+		background-image:url(../images/new1.jpeg);
 	}
 
 	#slides .slides-container .image2{
-		background-image:url(../images/4.jpg);
+		background-image:url(../images/new2.jpeg);
 	}
 
 	#slides .slides-container .image3{
-		background-image:url(../images/3.jpg);
+		background-image:url(../images/new3.jpeg);
 	}
 
-	#slides .slides-container .image4{
-		background-image:url(../images/1.jpg);
-	}
+     #slides .slides-container .image3.text{
+		 text-align: right;
+		 font-size:1.05em;
+		 font-weight:600;
+	 }
 
 	.v2 .home-arrow{
 		margin:0 auto;
@@ -564,7 +612,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	}
 
 	#navigation .mini-nav-button:hover{
-		color:#8BC3A3;
+		color:#d10a2c;
 		-webkit-transition: all 0.3s;
 		-moz-transition: all 0.3s;
 		transition: all 0.3s;
@@ -573,6 +621,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	.nav-menu{
 		float: right;
 		height: 100%;
+
 	}
 
 	.nav-menu ul.nav{
@@ -606,15 +655,40 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 
 	.dark-nav .nav li a:hover{
 		background:#222;
-		color:#8BC3A3;
+		color:#d10a2c;
 	}
 
+	.content-table{
+		font-family: "Interstate Black";
+		font-size: 20px;
+		list-style-type: disc;
+		text-align: left;
+		display: inline;
+		color: black;
+		/*position: relative;*/
+		/*bottom: -40px;*/
+
+	}
+	.energy{
+		font-size: 60px;
+		font-weight: bold;
+		font-family: "Interstate Black";
+		color: #d10a2c;
+
+	}
+
+	.energy-small{
+		font-size: 25px;
+		font-weight: bold;
+		font-family: "Interstate Black";
+		color: #d10a2c;
+	}
 	.dark-nav .nav li.active a{
-		color:#8BC3A3;
+		color:#d10a2c;
 	}
 
 	.dark-nav .nav li a:focus{
-		background:#8BC3A3;
+		background:#d10a2c;
 		color:#fff !important;
 	}
 
@@ -662,7 +736,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		content:'';
 		z-index: 1;
 		position: absolute;
-		background: #8BC3A3;
+		background: #d10a2c;
 		border: none;
 		border-radius:50%;
 		top:-1px;
@@ -685,9 +759,77 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 
 	/*Back ground for features*/
 .gymFeature{
-	/*background-image:url(../images/features/gym.png);*/
-	/*background-position: 100%;*/
-	/*background-repeat: no-repeat;*/
+	background-image:url(../images/features/gym.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.ftColoumn{
+	display: table-cell;
+	background-color: red;
+}
+
+.ftImage{
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.ftRow{
+	display: table;
+	width: 99%;
+	table-layout: fixed;
+	border-spacing:10px;
+}
+
+.ftRow1{
+	display: table;
+	width: 66%;
+	table-layout: fixed;
+	border-spacing: 10px;
+	margin-left: 15em;
+}
+.yoga{
+	background-image: url("../images/yoga.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.zumba{
+	background-image: url("../images/zumba.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.aero{
+	background-image: url("../images/features/aerobics.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.featureRow{
+	text-align: center;
+	height: 250px;
+}
+
+
+
+.rowText{
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	color: black;
+	position: relative;
+	float: left;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family:"Interstate Black" ;
+}
+
+.font-custom{
+	font-family:"Interstate Black" ;
 }
 
 .ptFeature{
@@ -756,7 +898,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		z-index: 4;
 		position: relative;
 		line-height: 60px;
-		background-color:#8BC3A3;
+		background-color:#d10a2c;
 		border-radius:50%;
 		border:rgba(0,0,0,0.10) 5px solid;
 		-webkit-transition: all 0.3s;
@@ -837,7 +979,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	.f-icon i{
 		font-size:3em;
 		color:#fff;
-		background:#8BC3A3;
+		background:#d10a2c;
 		-webkit-transition: all 0.3s;
 		-moz-transition: all 0.3s;
 		transition: all 0.3s;
@@ -1006,6 +1148,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		width: 100%;
 		height: auto;
 		z-index: 2;
+		background-size: cover;
 	}
 
 	.team-members .member a.team-image img{
@@ -1022,7 +1165,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		margin:0;
 		z-index: 3;
 		opacity:0.9;
-		background:#8BC3A3;
+		background:#d10a2c;
 		-webkit-transition: all 0.4s;
 		-moz-transition: all 0.4s;
 		transition: all 0.4s;
@@ -1046,7 +1189,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	}
 
 	.team-members .member-details .member-position{
-		color:#8BC3A3;
+		color:#d10a2c;
 		font-size:13px;
 	}
 
@@ -1095,7 +1238,6 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		height: auto;
 		min-height: 648px;
 		margin:70px auto;
-		background:url(../images/mac.png) center center no-repeat;
 		background-size:100%;
 	}
 
@@ -1105,10 +1247,16 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	}
 
 	#fun-acts{
-		background:#333 url(../images/bgd/background5.jpg);
 		background-size:     cover;
     background-repeat:   no-repeat;
     background-position: center center;
+	}
+
+	#clients{
+		background: url("../images/bk3.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: lightgray;
 	}
 
 
@@ -1129,7 +1277,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		color: white;
 		font-size:3em;
 		line-height:120px;
-		background:#8BC3A3;
+		background:#d10a2c;
 		text-align: center;
 		width:140px;
 		height:140px;
@@ -1161,9 +1309,11 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 /* Contact */
 
 	#contact {
-		background: url(../images/parallax/4.jpg) fixed;
+		background: url(../images/contact-us-background.png);
 		padding: 10px 0 10px;
-		background-size: cover;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		color: darkred;
 	}
 
 	.contact-text{
@@ -1225,13 +1375,13 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	}
 
 	.form:hover{
-		border:1px solid #8BC3A3;
+		border:1px solid #d10a2c;
 	}
 
 	.form:focus{
 		color: white;
 		outline: none;
-		border:1px solid #8BC3A3;
+		border:1px solid #d10a2c;
 	}
 
 	.textarea{
@@ -1260,7 +1410,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	}
 
 	.button:hover{
-		background:#8BC3A3;
+		background:#d10a2c;
 		color:white;
 	}
 
@@ -1272,7 +1422,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		height: auto;
 		padding:15px;
 		color:#fff;
-		background:#8BC3A3;
+		background:#d10a2c;
 		border:none;
 		border-radius:3px;
 		outline: none;
@@ -1329,7 +1479,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 		-moz-transition: all 0.3s;
 		transition: all 0.3s;
 		border-radius:50%;
-		background:#8BC3A3;
+		background:#d10a2c;
 	}
 
 	#site-socials .socials a.social:hover{
@@ -1366,17 +1516,12 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	}
 
 	#site-socials .top-button:hover{
-		color:#8BC3A3;
+		color:#d10a2c;
 	}
 
 /* Footer */
 
-	.footer{
-		padding:45px;
-		text-align: center;
-		background: #191919;
-		background:#222;
-	}
+
 
 	.footer h2.company-name{
 		margin-top:0;
@@ -1393,5 +1538,5 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 	}
 
 	.footer p.copyright a:hover{
-		color:#8BC3A3;
+		color:#d10a2c;
 	}
